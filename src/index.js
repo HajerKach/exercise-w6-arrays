@@ -13,23 +13,41 @@ const pokemons = [
   "Pikachu",
   "Pidgey"
 ];
+// print out, in a sentence, how many pokemons I have.
+// like: "I have x pokemons!"
 
 const countThem = () => {
-  // print out, in a sentence, how many pokemons I have.
-  // like: "I have x pokemons!"
+  let pocemon = pokemons.length;
+  console.log(`I have ${pocemon} pokemons`)
 };
+countThem();
+
+// order the pokemons alphabetically
 
 const orderThem = () => {
-  // order the pokemons alphabetically
+  pokemons.sort()
+  console.log(pokemons);
+
 };
+orderThem();
+
+// reverse the order of the pokemons
 
 const flipThem = () => {
-  // reverse the order of the pokemons
+  pokemons.reverse()
+  console.log(pokemons);
 };
+flipThem();
+
+// print the pokemons in UPPERCASE letters
 
 const makeThemBig = () => {
-  // print the pokemons in UPPERCASE letters
+  pokemons.forEach(element => {
+    console.log(element.toUpperCase());
+  });
+
 };
+makeThemBig();
 
 const onlyTheBs = () => {
   // only print the pokemons that starts with B
