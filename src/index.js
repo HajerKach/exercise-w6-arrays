@@ -49,13 +49,21 @@ const makeThemBig = () => {
 };
 makeThemBig();
 
-const onlyTheBs = () => {
-  // only print the pokemons that starts with B
-};
+// only print the pokemons that starts with B
 
+const onlyTheBs = () => {
+  const startsWithB = pokemons.filter(item => item.startsWith("B"));
+  console.log(startsWithB);
+}
+onlyTheBs();
+
+// remove all pokemons that starts with C
 const notTheCs = () => {
-  // remove all pokemons that starts with C
+  const withoutTheCs = pokemons.filter(item => !item.startsWith("C"));
+  console.log(withoutTheCs)
+
 };
+notTheCs();
 
 const nameAndIdThanks = () => {
   // print out name and index of all pokemons
